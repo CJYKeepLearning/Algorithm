@@ -1,0 +1,60 @@
+/************begin************/
+/*
+有—个由数字1,2,3,……，9组成的数字串（长度不超过200），问如何将M（M<=20）个加号（“+”）插入到这个数字串中，使所形成的算术表达式的值最小。请编写算法解决这个问题。
+注意：加号不能加在数字串的最前面或最末尾，也不应有两个或两个以上的加号相邻。M保证小于数字串的长度。
+*/
+#include <stdio.h>
+#include <string.h>
+#define maxn 200
+#define M 20
+#define Max 2147483647
+char c[maxn];
+int m;
+int lastNum(int num[],int i,int j){
+	int k=0;
+	int res=0;
+	for(k=i;k<=j;k++){
+		res = res*10+num[k]; 
+	}
+	return res;
+}
+int min(int a,int b){
+	if(a>b)
+	return b;
+	else
+	return a;
+}
+//i,j均为下标。 
+int solve(int num[],int i,int k){
+	int res1=0;
+	int res=Max;
+	int a=0,b=0;
+
+	if(i==0){
+		return num[i];
+	}
+	
+	if(k==0){
+		return lastNum(num,0,i);
+	}
+	for(a=0;a<i;a++){
+		res1 = solve(num,i-a-1,k-1);
+		res = min(res,res1+lastNum(num,i-a,i));
+	}
+	return res;
+	
+}
+int main()
+{
+	int dp[maxn][M]={0};
+	int cnum[maxn]={0};
+	int i=0,j=0,k=0,res=0;
+	scanf("%s %d",c,&m);
+	for(i=0;c[i]!=0;i++){
+		cnum[i] = c[i]-'0';
+	}
+	res = solve(cnum,i-1,m);
+	printf("%d\n",res);
+	return 0;
+}
+/************end************/

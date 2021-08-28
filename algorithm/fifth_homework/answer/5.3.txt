@@ -1,0 +1,95 @@
+/************begin************/
+#include<stdio.h>
+#define N 9 
+int arr[N]={1,2,3,4,5,6,7,8,9};
+int track[N]={0};
+int res=0;
+void print(){
+	int i=0;
+	for(i=0;i<N;i++){
+		printf("%d",track[i]);
+	}
+	printf("\n");
+}
+int isOK(){
+	int i=1;
+	int pre=0;
+	for(i=1;i<=N;i++){
+		pre=pre*10+track[i-1];
+		if(pre%i!=0)
+		return 0;
+	}
+	return 1;
+}
+int isContains(int n){
+	int i=0;
+	for(i=0;i<N;i++){
+		if(track[i]==n)
+		return 1;
+	}
+	return 0;
+}
+void backtrack(int j,int track[]){
+	if(j==N){
+		if(isOK()){
+			res++;
+			print();	
+		}
+		return;
+	}
+	int i=0;
+	for(i=0;i<N;i++){
+		if(isContains(arr[i]))
+			continue;
+		track[j]=arr[i];
+		backtrack(j+1,track);
+		track[j]=0;
+	}
+}
+int main(){
+	backtrack(0,track);
+	printf("一共有%d种",res);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/************end************/

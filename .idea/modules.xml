@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/JavaWeb/JavaWeb.iml" filepath="$PROJECT_DIR$/JavaWeb/JavaWeb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/algorithm/algorithm.iml" filepath="$PROJECT_DIR$/algorithm/algorithm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/datastructure_java/datastructure_java.iml" filepath="$PROJECT_DIR$/datastructure_java/datastructure_java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaWeb/hemlock、.iml" filepath="$PROJECT_DIR$/JavaWeb/hemlock、.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaWeb/html/html.iml" filepath="$PROJECT_DIR$/JavaWeb/html/html.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jianzhiOffer/jianzhiOffer.iml" filepath="$PROJECT_DIR$/jianzhiOffer/jianzhiOffer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/labuladong/labuladong.iml" filepath="$PROJECT_DIR$/labuladong/labuladong.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lanqiao/lanqiao.iml" filepath="$PROJECT_DIR$/lanqiao/lanqiao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/leetcode/leetcode.iml" filepath="$PROJECT_DIR$/leetcode/leetcode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/datastructure_java/leetcodeEnglish.iml" filepath="$PROJECT_DIR$/datastructure_java/leetcodeEnglish.iml" />
+      <module fileurl="file://$PROJECT_DIR$/leetcodeenglish/leetcodeenglish.iml" filepath="$PROJECT_DIR$/leetcodeenglish/leetcodeenglish.iml" />
+      <module fileurl="file://$PROJECT_DIR$/luogu/luogu.iml" filepath="$PROJECT_DIR$/luogu/luogu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/native/native.iml" filepath="$PROJECT_DIR$/native/native.iml" />
+      <module fileurl="file://$PROJECT_DIR$/thread/thread.iml" filepath="$PROJECT_DIR$/thread/thread.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zuoye/zuoye.iml" filepath="$PROJECT_DIR$/zuoye/zuoye.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function onclickFun() {
+            var usernameObj = document.getElementById(username);
+            var usernameText = usernameObj.value;
+            //如何验证字符串，符合某个规则。使用正则表达式
+            alert(usernameObj);
+            //test用于测试某个字符串是否匹配规则
+
+            var patt = new RegExp("e");
+            var str = "abcde";
+            alert(patt.test(str));
+        }
+    </script>
+</head>
+<body>
+    用户名:<input type="text" id="username" value="hhh">
+    <button onclick="onclickFun()">校验</button>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        var obj = new Object();
+        obj.name = "华仔";
+        obj.age = 18;
+        obj.fun = function () {
+            alert(obj.age);
+        }
+        //alert(obj.name);
+        //obj.fun();
+        var a = {};
+        //alert(typeof (a));
+        var b = {
+            bname:"虎仔",
+            bage:19,
+            bfun:function () {
+                alert(this.bname);
+            }
+        }
+        b.bfun();
+    </script>
+</head>
+<body>
+
+</body>
+</html>

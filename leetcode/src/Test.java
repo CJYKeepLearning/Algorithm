@@ -5,8 +5,8 @@ import java.util.List;
 
 public class Test {
     public static void main(String[] args) {
-        LC_451 test = new LC_451();
-        String s = "Aabb";
-        System.out.println(test.frequencySort(s));
+        LC_165 test = new LC_165();
+        int i = test.compareVersion2("1.0","1.0.0.1");
+        System.out.println(i);
     }
 }

@@ -1,3 +1,6 @@
+import java.util.Comparator;
+import java.util.PriorityQueue;
+
 public class IGC_17_14 {
     //选择排序
     public int[] smallestKSelectSort(int[] arr, int k) {
@@ -50,5 +53,32 @@ public class IGC_17_14 {
             quickSort(arr,left,r-1,k);
             quickSort(arr,r+1,right,k);
         }
+    }
+    //堆
+    public int[] smallestKHeapSort(int[] arr, int k) {
+        int[] ans = new int[k];
+        if (k==0){
+            return ans;
+        }
+        PriorityQueue<Integer> queue = new PriorityQueue<>(new Comparator<Integer>() {
+            @Override
+            public int compare(Integer o1, Integer o2) {
+                return o2-o1;
+            }
+        });
+        //先将前k个放入到最小堆中，再通过数组后面的数字进行维护
+        for (int i=0;i<k;i++){
+            queue.offer(arr[i]);
+        }
+        for (int i=k;i<arr.length;i++){
+            if (queue.peek()>arr[i]){
+                queue.poll();
+                queue.offer(arr[i]);
+            }
+        }
+        for (int i=0;i<k;i++){
+            ans[i] = queue.poll();
+        }
+        return ans;
     }
 }

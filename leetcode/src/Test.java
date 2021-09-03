@@ -8,7 +8,7 @@ public class Test {
         int[] arr = {1,3,5,7,2,4,6,8};
         int k = 4;
         IGC_17_14 test = new IGC_17_14();
-        int[] ans = test.smallestKQuickSort(arr,k);
+        int[] ans = test.smallestKHeapSort(arr,k);
         for (int i:ans
              ) {
             System.out.print(i+" ");

@@ -5,8 +5,13 @@ import java.util.List;
 
 public class Test {
     public static void main(String[] args) {
-        LC_165 test = new LC_165();
-        int i = test.compareVersion2("1.0","1.0.0.1");
-        System.out.println(i);
+        int[] arr = {1,3,5,7,2,4,6,8};
+        int k = 4;
+        IGC_17_14 test = new IGC_17_14();
+        int[] ans = test.smallestKQuickSort(arr,k);
+        for (int i:ans
+             ) {
+            System.out.print(i+" ");
+        }
     }
 }

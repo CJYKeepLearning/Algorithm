@@ -1,4 +1,5 @@
 public class offer_10_I {
+    //动态规划
     public int fib(int n) {
         if (n==0)
             return 0;

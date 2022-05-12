@@ -27,6 +27,7 @@ class Node{
     int val;
     Node left;
     Node right;
+    Node[] adj;
     public Node(){}
     public Node(int val){
         this.val = val;

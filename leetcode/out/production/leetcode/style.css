@@ -1,0 +1,17 @@
+.form{
+    width: 300px;
+    height: 200px;
+    margin: 30px auto;
+    padding: 50px;
+    background: green;
+    color: #fff;
+    font: 20px "宋体";
+}
+.form .login_form .login-info{
+    padding: 10px;
+}
+
+.form .login_submit{
+    margin: 10px 100px;
+    font-size: 20px;
+}

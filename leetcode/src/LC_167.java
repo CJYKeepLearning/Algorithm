@@ -1,16 +1,15 @@
 public class LC_167 {
     public int[] twoSum(int[] numbers, int target) {
-        int[] ans = new int[2];
-        ans[0] = 0;
-        ans[1] = numbers.length-1;
-        while (numbers[ans[0]]+numbers[ans[1]]!=target){
-            if (numbers[ans[0]]+numbers[ans[1]]<target)
-                ans[0]++;
-            else
-                ans[1]--;
+        int left = 0, right = numbers.length-1;
+        while (left<=right){
+            if(numbers[left] + numbers[right] ==target){
+                return new int[]{left+1,right+1};
+            }else if (numbers[left] + numbers[right] < target){
+                left++;
+            }else {
+                right --;
+            }
         }
-        ans[0]++;
-        ans[1]++;
-        return ans;
+        return new int[]{-1,-1};
     }
 }
